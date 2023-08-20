@@ -150,6 +150,8 @@ REST_FRAMEWORK = {
     
 }
 
+
+
 from datetime import timedelta
 
 SIMPLE_JWT = {
@@ -191,3 +193,15 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_OBTAIN_SERIALIZER": "rest_framework_simplejwt.serializers.TokenObtainSlidingSerializer",
     "SLIDING_TOKEN_REFRESH_SERIALIZER": "rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer",
 }
+
+#this is for Reset Password Token PasswordResetTokenGenerator() Timeout
+PASSWORD_RESET_TIMEOUT=900 # in seconds
+
+import os
+#email Configuration
+EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
+EMAIL_HOST_PASSWROD = os.environ.get('EMAIL_PASS')
+EMAIL_USE_TLS = True

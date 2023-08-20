@@ -1,0 +1,128 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "JWT Dajngo",
+    "dateExported": "2023-08-20T07:42:45.443Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "aa167464-5ef8-4538-9a66-a04442d2aec7",
+            "colId": "492012aa-7d01-425c-836a-ada5e561d609",
+            "containerId": "",
+            "name": "Reset Password Email Link",
+            "url": "http://127.0.0.1:8000/api/user/reset-password/Mg/bt8dwf-5756e6ef3b017c32c56a820c6932e0c8/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-20T07:41:24.185Z",
+            "modified": "2023-08-20T07:41:24.185Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\": \"hello123\",\n  \"password2\": \"hello123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e2e81f62-d264-4315-b46d-b0a09d902073",
+            "colId": "492012aa-7d01-425c-836a-ada5e561d609",
+            "containerId": "",
+            "name": "Send Rest Password Email",
+            "url": "http://127.0.0.1:8000/api/user/send-reset-password-email/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-20T07:41:37.944Z",
+            "modified": "2023-08-20T07:41:37.944Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"sagar@appycodes.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1ae3d7e4-07df-4997-bd47-c92c8bc2385a",
+            "colId": "492012aa-7d01-425c-836a-ada5e561d609",
+            "containerId": "",
+            "name": "User Login",
+            "url": "http://127.0.0.1:8000/api/user/login/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-08-20T07:42:12.713Z",
+            "modified": "2023-08-20T07:42:12.713Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"sagar@appycodes.com\",\n  \"password\": \"HelloWorld\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3a551744-7921-437f-8725-50958ceec068",
+            "colId": "492012aa-7d01-425c-836a-ada5e561d609",
+            "containerId": "",
+            "name": "Change Password",
+            "url": "http://127.0.0.1:8000/api/user/changepassword/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-08-20T07:42:16.775Z",
+            "modified": "2023-08-20T07:42:16.775Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkyNTMzODQzLCJpYXQiOjE2OTI1MTIyNDMsImp0aSI6IjU0YTc5MTMzMGVjYzQxYjA4Y2Y4ZTY0ZDM3YzJlZDkyIiwidXNlcl9pZCI6Mn0.11eJpsEzqNMrS1WLewqQaoHKQJrjB-CRtiKkRw_ZB1Y"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\":\"HelloWorld\",\n  \"password2\":\"HelloWorld\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b160c9fe-a569-49d9-9736-a3b04de125ca",
+            "colId": "492012aa-7d01-425c-836a-ada5e561d609",
+            "containerId": "",
+            "name": "User Register",
+            "url": "http://127.0.0.1:8000/api/user/register/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-08-20T07:42:20.717Z",
+            "modified": "2023-08-20T07:42:20.717Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"vicky@appycodes.com\",\n  \"name\":\"alex Paul\",\n  \"password\": \"Sagarpaul12\",\n  \"password2\": \"Sagarpaul12\",\n  \"tc\": \"True\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bb63d47a-d777-4986-ad98-5136aaecf195",
+            "colId": "492012aa-7d01-425c-836a-ada5e561d609",
+            "containerId": "",
+            "name": "User Profile",
+            "url": "http://127.0.0.1:8000/api/user/profile/",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-08-20T07:42:39.859Z",
+            "modified": "2023-08-20T07:42:39.859Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkyNTA2MjIxLCJpYXQiOjE2OTI1MDU5MjEsImp0aSI6IjYwODViMjhlMWEwNzRmMTVhMmY3ZjhmMTUxY2MyYjA2IiwidXNlcl9pZCI6Mn0.4OUjGEy67iXAJZYolkrqLHlzr2YqAmbzOsxAuVhkL4k"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
